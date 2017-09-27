@@ -1,10 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* Tuple
-
+* [Tuple](tuple.md)
 * [How can I do X?](second-question.md)
 * [Test](test.md)
-
-
 
