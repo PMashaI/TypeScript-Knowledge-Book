@@ -1,7 +1,10 @@
 # Summary
 
 * [Introduction](README.md)
-* [What is XYZ?](first-question.md)
+* Tuple
+
 * [How can I do X?](second-question.md)
 * [Test](test.md)
+
+
 
