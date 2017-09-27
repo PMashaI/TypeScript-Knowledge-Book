@@ -2,6 +2,8 @@
 
 * [Introduction](README.md)
 * [Tuple](tuple.md)
-* [How can I do X?](second-question.md)
+*  Any
 * [Test](test.md)
+
+
 
