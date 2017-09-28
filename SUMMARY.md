@@ -14,7 +14,5 @@
 * [Class](class.md)
 * [Function](function.md)
 * [Остаточные параметры](ostatochnie-parametri.md)
-* Контекстный тип
-
-
+* [Контекстный тип](kontekstnii-tip.md)
 
