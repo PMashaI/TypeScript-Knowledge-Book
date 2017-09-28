@@ -110,7 +110,7 @@ TypeScript itself is simple to add to any project with npm.
 
 — Компилирование в ES5 или даже в ES3 \(с оговорками\).
 
-**И в том числе плюшки ES6:**
+**И в том числе плюшки ES6: **
 
 — Arrow Functions;
 
