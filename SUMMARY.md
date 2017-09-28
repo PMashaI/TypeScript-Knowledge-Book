@@ -8,7 +8,5 @@
 * [Enum](enum.md)
 * [Var](var.md)
 * [Let](let.md)
-* Const
-
-
+* [Const](const.md)
 
