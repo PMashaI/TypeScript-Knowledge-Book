@@ -1,6 +1,6 @@
 ### **Название фичи: Классы**
 
-**Описание:          
+**Описание:            
 **Поддержка наследования \(extends\).
 
 Модификаторы `public, private, protected, readonly, static, abstract.`
@@ -15,17 +15,17 @@
 
 **Пример кода:**
 
-```
+```js
 class Greeter {
-	greeting: string;
-	
-	constructor(message: string) {
-		this.greeting = message;
-	}
-	
-	greet() {
-		return "Hello, " + this.greeting;
-	}
+    greeting: string;
+
+    constructor(message: string) {
+        this.greeting = message;
+    }
+
+    greet() {
+        return "Hello, " + this.greeting;
+    }
 }
 
 let greeter = newGreeter("world");
