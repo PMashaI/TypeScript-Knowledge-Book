@@ -5,7 +5,5 @@
 * [Any](any.md)
 * [Never ](never.md)
 * [Type Assertions](type-assertions.md)
-* Enum
-
-
+* [Enum](enum.md)
 
