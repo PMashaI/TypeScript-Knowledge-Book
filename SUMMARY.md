@@ -4,7 +4,5 @@
 * [Tuple](tuple.md)
 * [Any](any.md)
 * [Never ](never.md)
-* Type Assertions
-
-
+* [Type Assertions](type-assertions.md)
 
