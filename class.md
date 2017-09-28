@@ -1,35 +1,39 @@
 ### **Название фичи: Классы**
 
-**Описание:    
+**Описание:      
 **Поддержка наследования \(extends\).
 
 Модификаторы public, private, protected, readonly, static, abstract.
 
-Поддержка getter, setter\*\*
+Поддержка getter, setter
 
-Аналог в c\#/js: **class**
+**Аналог в c\#/js: **class
 
-Решаемая проблема:
+**Решаемая проблема:**
 
-Пример возникновения:
+**Пример возникновения:**
 
-Пример кода:\*\*
+**Пример кода:**
 
 `class Greeter {`
 
-    `greeting: string;`
+```
+greeting: string;
 
-    `constructor(message: string) {`
+constructor(message: string) {
 
-    `this.greeting = message;`
+this.greeting = message;
+```
 
 `}`
 
-    `greet() {`
+```
+greet() {
 
-        `return"Hello, "+ this.greeting;`
+    return "Hello, " + this.greeting;
 
-     `}`
+ }
+```
 
 `}`
 
