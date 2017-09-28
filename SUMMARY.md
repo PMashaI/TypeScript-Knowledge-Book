@@ -6,9 +6,5 @@
 * [Never ](never.md)
 * [Type Assertions](type-assertions.md)
 * [Enum](enum.md)
-* Var
-
-
-
-
+* [Var](var.md)
 
