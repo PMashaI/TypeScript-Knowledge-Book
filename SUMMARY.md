@@ -12,7 +12,5 @@
 * [Destruction](destruction.md)
 * [Interface](interface.md)
 * [Class](class.md)
-* Function
-
-
+* [Function](function.md)
 
