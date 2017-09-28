@@ -1,6 +1,6 @@
 ### **Название фичи: Интерфейсы**
 
-**Описание:    
+**Описание:      
 **Интерфейс определяет свойства и методы, которые объект должен реализовать. Интерфейсы определяются с помощью ключевого слова interface. Используется как альтернатива множественного наследования. Позволяет заложить структуру класса: имена методов, списки аргументов, возвращаемые типы, но только не тела методов.
 
 **Аналог вc\# /js: **interface в Java и C\#
@@ -8,7 +8,7 @@
 **Решаемая проблема:**  
 Наложение ряда ограничений на объект.
 
-**Пример возникновения:    
+**Пример возникновения:      
 **Передача в функцию аргументов в виде объекта, в котором указаны всего несколько свойств.
 
 **Преимущества:**
@@ -25,60 +25,46 @@
 
 Обычный интерфейс:
 
-`interface LabelledValue{`
+```js
+interface LabelledValue {
+	label: string;
+}
 
+function printLabel(labelledObj: LabelledValue) {
+	console.log(labelledObj.label);
+}
+
+let myObj = {
+	size: 10,
+	label: "Size 10 Object"
+};
+
+printLabel(myObj);
 ```
-   label:string;
-```
-
-`}`
-
-`function printLabel(labelledObj: LabelledValue) {`
-
-```
-  console.log(labelledObj.label);
-```
-
-`}`
-
-`let myObj = {`
-
-```
- size: 10, 
-
- label: "Size 10 Object"
-```
-
-`};`
-
-`printLabel(myObj);`
 
 Интерфейс массива:
 
-`interfaceDictionary {`
+```js
+interface Dictionary {
 
+
+}
+
+var colors: Dictionary = {};
+
+colors["red"] = "#ff0000";
+colors["green"] = "#00ff00";
+colors["blue"] = "#0000ff";
+
+console.log(colors["red"]);
 ```
-  [index: string]: string;
-```
-
-`}`
-
-`varcolors: Dictionary = {};`
-
-`colors["red"] = "#ff0000";`
-
-`colors["green"] = "#00ff00";`
-
-`colors["blue"] = "#0000ff";`
-
-`console.log(colors["red"]);`
 
 **  
  Перекомпилированный в JS код: **\(при компиляци интерфейс исчезает\)
 
 Обычный интерфейс:
 
-![](/assets/simport.png)![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png)**    
+![](/assets/simport.png)![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png)**      
 **
 
 Интерфейс массива:
