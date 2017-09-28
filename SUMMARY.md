@@ -9,7 +9,5 @@
 * [Var](var.md)
 * [Let](let.md)
 * [Const](const.md)
-* Destruction
-
-
+* [Destruction](destruction.md)
 
