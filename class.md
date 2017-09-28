@@ -1,13 +1,13 @@
 ### **Название фичи: Классы**
 
-**Описание:      
+**Описание:        
 **Поддержка наследования \(extends\).
 
-Модификаторы public, private, protected, readonly, static, abstract.
+Модификаторы `public, private, protected, readonly, static, abstract.`
 
-Поддержка getter, setter
+Поддержка `getter, setter`
 
-**Аналог в c\#/js: **class
+**Аналог в c\# / js: **class
 
 **Решаемая проблема:**
 
