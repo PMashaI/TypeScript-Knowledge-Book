@@ -16,15 +16,19 @@ Type assertions - это способ сказать компилятору "п�
 
 Приведение к типу может быть сделано двумя способами. Первый это использование синтаксиса угловых скобок:
 
-`let someValue: any = "this is a string";`
+```js
+let someValue: any = "this is a string";
 
-`let strLength: number = (<string>someValue).length;</string>`
+let strLength: number = (<string>someValue).length;</string>
+```
 
 И другой - использование ключевого слова as:
 
-`let someValue: any = "this is a string";`
+```js
+let someValue: any = "this is a string";
 
-`let strLength: number = (someValue as string).length;`
+let strLength: number = (someValue as string).length;
+```
 
 Эти два примера эквивалентны.
 
@@ -33,9 +37,11 @@ Type assertions - это способ сказать компилятору "п�
 
 For Both parts of the code:
 
-`var someValue = "this is a string";`
+```js
+var someValue = "this is a string";
 
-`var strLength = someValue.length;`
+var strLength = someValue.length;
+```
 
 **  
 Как решилась проблема:**
