@@ -18,8 +18,22 @@ Never представляет тип, значение которого ник�
 **  
 Пример кода:**
 
-![](/assets/1import.png)![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)**  
-Перекомпилированный вJSкод:**![](/assets/import5.png)![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png)**  
+```js
+function fail(message: string): never {
+	throw new Error(message);
+}
+```
+
+![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image002.jpg)**  
+Перекомпилированный вJSкод:**![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png)
+
+```js
+function fail(message) {
+	throw new Error(message);
+} 
+```
+
+![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png)**  
 Как решилась проблема:**
 
 Тип never является подтипом любого типа. Переменная типаneverможет быть присвоена переменной любого другого типа. С другой стороны, нет такого типа, который будет являться подтипом данного типа, также как и переменной данного типа ничего нельзя присвоить кроме переменной такого же типа \(never\).
