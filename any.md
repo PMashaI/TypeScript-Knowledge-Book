@@ -1,6 +1,6 @@
 #### **Название фичи: Any**
 
-**Описание:              
+**Описание:                
 **Тип any - мощный способ работы с существующим Javascript, который позволяет включать проверки типов на этапе компиляции.  
 **  
 Аналог в c\# /js: **`object`
@@ -19,7 +19,7 @@
 let notSure: any = 4;
 
 notSure = "maybe a string instead";
-notSure = false; 
+notSure = false;
 ```
 
 **Перекомпилированный в JSкод:**
@@ -29,7 +29,6 @@ var notSure = 4;
 
 notSure = "maybe a string instead";
 notSure = false;  
-Как решилась проблема:
 ```
 
 **Как решилась проблема**:
