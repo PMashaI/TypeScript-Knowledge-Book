@@ -26,5 +26,7 @@ x = function(s) {
 
 * Интеграция с фреймворками: ссылку на туториал из Ангуляра 2: [https://angular.io/tutorial](https://angular.io/tutorial) и т.д.
 
+* Набить руку на наших тестах ? - [https://www.npmjs.com/package/karma-typescript](https://www.npmjs.com/package/karma-typescript)
+
 _**Вынести на ROI Talks ?**_
 
