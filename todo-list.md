@@ -24,7 +24,7 @@ x = function(s) {
 
 * Классификация ? + вводные статьи - подроби introduction
 
-* что человеку делать и как пользоваться - типичные ошибки JS и как решает их typescript [https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+* что человеку делать и как пользоваться - типичные ошибки JS и как решает их typescript [https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html) - высокоуровнево, что TS позволяет типизировать, вызывать функции с кокретными типизированными аргументами и т.п.
 
 * Интеграция с фреймворками: ссылку на туториал из Ангуляра 2: [https://angular.io/tutorial](https://angular.io/tutorial) и т.д.
 
