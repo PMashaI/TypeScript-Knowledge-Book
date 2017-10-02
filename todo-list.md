@@ -4,5 +4,7 @@
 
 * Синхронизировать стили с Гитом \([https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)\)
 
+* Поднять историю развития TypeScript \([https://blogs.msdn.microsoft.com/typescript/page/7/](https://blogs.msdn.microsoft.com/typescript/page/7/)\) - читаем, если возможно дополняем основные статьи, добавить ссылки / примеры в конкретные статьи на историю появления
+
 
 
