@@ -52,13 +52,17 @@ _**Предпочтительные инструменты**_: VisualStudioCode 
 
 Компилятор TS можно установить с помощью команды менеджера пакетовnpm, который используется в Node.js:
 
-`> npm install -g typescript`
+```node.js
+> npm install -g typescript
+```
 
 **Quick start: Depending on the technology what we will use together with TS**
 
 TypeScript itself is simple to add to any project with npm.
 
-`> npm install -D typescript`
+```js
+> npm install -D typescript
+```
 
 **Плюсы**
 
