@@ -1,6 +1,6 @@
 ### **Название фичи: Функции**
 
-**Описание:      
+**Описание:        
 **Работа функций и особенности аналогичныJS.**  
 Аналог в c\# / js: **аналогично JS  
 **Отличия:**
@@ -11,9 +11,13 @@
 
 * TS считает, что число передаваемых параметров должно совпадать с числом параметров, которые ожидает функция, то есть каждый параметр функции обязателен.
 
-* Возможность сделать параметры функции необязательными с помощью «**?**»  
-  `function buildName (lastName?:string) {…}`  
-  Необязательные параметры должны идти после обязательных.
+* Возможность сделать параметры функции необязательными с помощью «?»
+
+  ```js
+  function buildName (lastName?: string) {…}
+  ```
+
+* Необязательные параметры должны идти после обязательных.
 
 * Параметры со значением по умолчанию \(`lastName= “Hello!”`\)
 
@@ -21,45 +25,44 @@
 
 **Пример возникновения:**
 
-**Пример кода:  
+**Пример кода:    
 **_**упрощенная контекстная типизация**_
 
-`function add (x: number, y: number): number {`
-
-`return x + y;`
-
-`}`
-
-`let myAdd = function (x: number, y: number): number {`
-
-`return x+y;`
-
-`};`
+```js
+function add (x: number, y: number): number {
+    return x + y;
+}
+let myAdd = function (x: number, y: number): number {
+    return x + y;
+};
+```
 
 _**полноценный пример**_
 
-`let myAdd: (baseValue: number, increment: number) =>`
-
-`number = function (x: number, y: number): number {`
-
-```
+```js
+let myAdd: (baseValue: number, increment: number) =>
+number = function (x: number, y: number): number {
    return x + y;
+};
 ```
-
-`};`
 
 **  
 Перекомпилированный в JS код:**
 
-![](/assets/daimport.png)
-
-`var myAdd = function (x, y) {`
-
+```js
+function add(x, y) {
+    return x + y;
+}
+var myAdd = function(x, y) {
+    return x + y;
+}
 ```
- return x + y; 
-```
 
-`};`
+```js
+var myAdd = function (x, y) {
+    return x + y;
+};
+```
 
 **  
 Как решилась проблема:**
