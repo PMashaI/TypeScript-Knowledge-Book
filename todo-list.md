@@ -5,7 +5,7 @@
 var x: (number) => number;
 
 x = function(s) {
-	return s.toUpperCase();
+    return s.toUpperCase();
 }
 ```
 
@@ -19,6 +19,14 @@ x = function(s) {
 * _**Вынести на ROI Talks ?**_
 
 * Проревьювить то, что не смотрели
+
+* Фидбек от Макса &lt;- может ли Макс изучить по нему TS
+
+* Классификация ? + вводные статьи - подроби introduction
+
+* что человеку делать и как пользоваться - типичные ошибки JS и как решает их typescript [https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+
+* Интеграция с фреймворками: ссылку на туториал из Ангуляра 2: [https://angular.io/tutorial](https://angular.io/tutorial) и т.д.
 
 
 
