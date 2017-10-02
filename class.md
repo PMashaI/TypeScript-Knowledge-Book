@@ -1,6 +1,6 @@
 ### **Название фичи: Классы**
 
-**Описание:            
+**Описание:              
 **Поддержка наследования \(extends\).
 
 Модификаторы `public, private, protected, readonly, static, abstract.`
@@ -34,7 +34,20 @@ let greeter = newGreeter("world");
 **  
 Перекомпилированный в JS код:**
 
-![](file:///C:\Users\MPCHEL~1\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png)![](/assets/saimport.png)
+```js
+var Greeter = (function(){
+	function Greeter(message) {
+		this.greeting = message;
+	};
+	Greeter.prototype.greet = function(){
+		return "Hello, " + this.greeting;
+	};
+	
+	return Greeter;
+}());
+
+var greeter = new Greeter("world"); 
+```
 
 **Как решилась проблема: **
 
