@@ -1,6 +1,6 @@
 #### **Название фичи: Any**
 
-**Описание:      
+**Описание:        
 **Тип any - мощный способ работы с существующим Javascript, который позволяет выключать проверки типов на этапе компиляции.  
 **  
 Аналог в c\# / js**: `object`
@@ -39,9 +39,9 @@ notSure = false;
 
 Ограниченная типизация `Union`
 
+Тип объединение \(\)
 
 
 
-
-Добавь информацию -&gt; http://typescript-lang.ru/docs/Advanced%20Types.html
+Добавь информацию -&gt; [http://typescript-lang.ru/docs/Advanced Types.html](http://typescript-lang.ru/docs/Advanced Types.html)
 
