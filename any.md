@@ -37,9 +37,9 @@ notSure = false;
 
 **Можно использовать вместо:**
 
-Ограниченная типизация `Union`
+* Ограниченная типизация `Union`
 
-Тип объединение \(\)
+* Тип объединение
 
 Добавь информацию -&gt; [http://typescript-lang.ru/docs/Advanced Types.html](http://typescript-lang.ru/docs/Advanced Types.html)
 
