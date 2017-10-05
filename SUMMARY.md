@@ -3,8 +3,8 @@
 * [Introduction](README.md)
 * [Tuple](tuple.md)
 * [Any](any.md)
-* Union
-* Тип объединение
+* [Union](union.md)
+* [Тип объединение](tip-obedinenie.md)
 * [Never ](never.md)
 * [Type Assertions](type-assertions.md)
 * [Enum](enum.md)
@@ -18,6 +18,4 @@
 * [Остаточные параметры](ostatochnie-parametri.md)
 * [Контекстный тип](kontekstnii-tip.md)
 * [ToDo List](todo-list.md)
-
-
 
