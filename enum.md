@@ -35,6 +35,5 @@ Color[Color["Blue"] = 4] = "Blue";
 var c = Color.Green;
 ```
 
-  
 **Как решилась проблема**:
 
