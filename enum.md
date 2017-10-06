@@ -4,13 +4,12 @@
 
 Способ задания понятных имен набору численных значений. Перечисления позволяют определить набор именованных числовых констант. Они определяются используя ключевое слово enum.
 
-_**СМОТРИ **_[http://typescript-lang.ru/docs/Enums.html](http://typescript-lang.ru/docs/Enums.html)
+_СМОТРИ _[http://typescript-lang.ru/docs/Enums.html](http://typescript-lang.ru/docs/Enums.html)
 
-**  
-Аналог вc\# /js: **`Enumerable`**  
+**Аналог в c\# / js**: `Enumerable`**  
 Решаемая проблема:  
 Пример возникновения:  
-Пример кода:**
+Пример кода**:
 
 ```js
 enum Color {Red = 1, Green = 2, Blue = 4};
@@ -36,6 +35,6 @@ Color[Color["Blue"] = 4] = "Blue";
 var c = Color.Green;
 ```
 
-**  
-Как решилась проблема:**
+  
+**Как решилась проблема**:
 
