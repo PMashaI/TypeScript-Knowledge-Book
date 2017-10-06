@@ -1,13 +1,13 @@
 ### **Название фичи: Классы**
 
-**Описание:              
+**Описание**:**  
 **Поддержка наследования \(extends\).
 
 Модификаторы `public, private, protected, readonly, static, abstract.`
 
 Поддержка `getter, setter`
 
-**Аналог в c\# / js: **class
+**Аналог в c\# / js**: class
 
 **Решаемая проблема:**
 
@@ -31,23 +31,22 @@ class Greeter {
 let greeter = newGreeter("world");
 ```
 
-**  
-Перекомпилированный в JS код:**
+**Перекомпилированный в JS код**:
 
 ```js
 var Greeter = (function(){
-	function Greeter(message) {
-		this.greeting = message;
-	};
-	Greeter.prototype.greet = function(){
-		return "Hello, " + this.greeting;
-	};
-	
-	return Greeter;
+    function Greeter(message) {
+        this.greeting = message;
+    };
+    Greeter.prototype.greet = function(){
+        return "Hello, " + this.greeting;
+    };
+
+    return Greeter;
 }());
 
-var greeter = new Greeter("world"); 
+var greeter = new Greeter("world");
 ```
 
-**Как решилась проблема: **
+**Как решилась проблема**:
 
