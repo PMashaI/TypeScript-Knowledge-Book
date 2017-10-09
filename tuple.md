@@ -14,29 +14,57 @@
 
 Вы хотите объявить массив как пару "строка" и "число", и гарантировать, что в первом элементе будет именно строка, а во втором число.
 
-**Пример кода:**
+**Пример проблемы на JavaScript:**
 
 ```js
-//Объявление типа tuple
-let x: [string, number];
+let x;
 
-//Инициализация
+// Инициализация
 x = ['hello', 10];
 
-//Некорректная инициализация -> error
+console.log(x[0].trim());     // Работает
+console.log(x[1].toFixed(2)); // Работает
+
+// Некорректная инициализация
 x = [10, 'hello'];
+
+console.log(x[0].trim());     // Падает в runtime: trim is not a function
+console.log(x[1].toFixed(2)); // Падает в runtime: toFixed is not a function
 ```
 
-**Перекомпилированный вJSкод:**
+**Пример решения на TypeScript:**
+
+```js
+// Объявление типа tuple
+let x: [string, number];
+
+// Инициализация
+x = ['hello', 10];
+
+console.log(x[0].trim());
+console.log(x[1].toFixed(2));
+
+// Некорректная инициализация
+x = [10, 'hello'];         // выведет ошибку во время компиляции
+
+console.log(x[0].trim());
+console.log(x[1].toFixed(2));
+```
+
+**Перекомпилированный в JS код:**
 
 ```js
 var x;
 
-//Инициализация
 x = ['hello', 10];
 
-//Некорректная инициализация -> error
+console.log(x[0].trim());
+console.log(x[1].toFixed(2));
+
 x = [10, 'hello'];
+
+console.log(x[0].trim());
+console.log(x[1].toFixed(2));
 ```
 
 **Как решилась проблема:**
