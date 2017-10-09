@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Tuple](tuple.md)
 * [Any](any.md)
-* [Тип объединение Union](/tip-obedinenie.md)
+* [Union](/tip-obedinenie.md)
 * [Never ](never.md)
 * [Type Assertions](type-assertions.md)
 * [Enum](enum.md)
