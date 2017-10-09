@@ -40,16 +40,20 @@ let indentedString2 = padLeft("Hello world", " 10 ");
 let indentedString3 = padLeft("Hello world", true);   // выведет ошибку во время компиляции
 ```
 
+**Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
+
+```js
+function padLeft(value: string, padding: string | number) {
+    // ...
+}
+```
+
 **Перекомпилированный в JSкод:**
 
 ```js
 function padLeft(value, padding) {
     // ...
 }
-
-let indentedString1 = padLeft("Hello world", 10);
-let indentedString2 = padLeft("Hello world", " 10 ");
-let indentedString3 = padLeft("Hello world", true);
 ```
 
 **Как решилась проблема**:
