@@ -3,7 +3,7 @@
 **Описание:**
 
 Описывает значение, которое может быть одним из нескольких типов. Используется вертикальная черта \(`|`\), чтобы отделить каждый тип.  
-**Аналог в c\# / js**: `union`
+**Аналог в c\# / js**: [StructLayoutAttribute](https://msdn.microsoft.com/en-us/library/system.runtime.interopservices.structlayoutattribute%28v=vs.110%29.aspx)
 
 **Решаемая проблема:**
 
