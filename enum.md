@@ -9,7 +9,7 @@ _СМОТРИ _[http://typescript-lang.ru/docs/Enums.html](http://typescript-lan
 **Аналог в c\# / js**: `Enumerable`**  
 Решаемая проблема:  
 Пример возникновения:  
-Пример кода**:
+Синтаксис**:
 
 ```js
 enum Color {Red = 1, Green = 2, Blue = 4};
