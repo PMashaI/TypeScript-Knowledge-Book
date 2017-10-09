@@ -13,13 +13,12 @@
 
 Разработчик получает значения переменной из динамического контента, например от пользователя или от сторонней JS библиотеки и для нее нет определения типов.
 
-**Пример кода:**
+**Синтаксис:**
 
 ```js
 let notSure: any = 4;
 
-notSure = "maybe a string instead";
-notSure = false;
+notSure = "maybe a string instead"; // работает
 ```
 
 **Перекомпилированный в JSкод:**
@@ -27,8 +26,7 @@ notSure = false;
 ```js
 var notSure = 4;
 
-notSure = "maybe a string instead";
-notSure = false;
+notSure = "maybe a string instead"; // не работает
 ```
 
 **Как решилась проблема**:
