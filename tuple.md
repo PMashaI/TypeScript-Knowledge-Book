@@ -4,7 +4,7 @@
 
 Тип Tuple дает вам возможность объявить массив с известным фиксированным количеством элементов, которые не обязаны быть одного типа.
 
-**Аналог в c\# / js**:  `List<object> / object[]`
+**Аналог в c\# / js**:  `Tuple<T1, T2, T3, ...> / object[]`
 
 **Решаемая проблема:**
 
@@ -32,6 +32,10 @@ console.log(x[0].trim());     // Падает в runtime: trim is not a function
 console.log(x[1].toFixed(2)); // Падает в runtime: toFixed is not a function
 ```
 
+**Как решить проблему:**
+
+Объявить массив с помощью типа tuple
+
 **Пример решения на TypeScript:**
 
 ```js
@@ -51,23 +55,19 @@ console.log(x[0].trim());
 console.log(x[1].toFixed(2));
 ```
 
+**Синтаксис:**
+
+```js
+let x: [string, number];
+let y: [IFoo, number, string | number];
+```
+
 **Перекомпилированный в JS код:**
 
 ```js
-var x;
-
-x = ['hello', 10];
-
-console.log(x[0].trim());
-console.log(x[1].toFixed(2));
-
-x = [10, 'hello'];
-
-console.log(x[0].trim());
-console.log(x[1].toFixed(2));
+let x;
+let y;
 ```
 
-**Как решилась проблема:**
 
-Инициализация массива с помощью типа tuple.
 
