@@ -41,5 +41,7 @@ notSure = false;
 
 * Тип объединение
 
+* В случае, если используется внешняя библиотека, то подключить определения типов для этой библиотеки \([\*.d.ts](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)\)
+
 Добавь информацию -&gt; [http://typescript-lang.ru/docs/Advanced Types.html](http://typescript-lang.ru/docs/Advanced Types.html)
 
