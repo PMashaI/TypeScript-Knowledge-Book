@@ -56,13 +56,12 @@ function example(firstArg: number, ...restArgs: string[]){
 **Перекомпилированный в JavaScript код**:
 
 ```js
-function a(firstArg) {
+function example(firstArg) {
     var restArgs = [];
     for (var _i = 1; _i < arguments.length; _i++) {
         restArgs[_i - 1] = arguments[_i];
     }
 }
-
 ```
 
 
