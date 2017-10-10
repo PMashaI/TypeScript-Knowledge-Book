@@ -33,7 +33,7 @@ function add(x) {
 }
 
 var a = add(1); // работает
-a = add("hello"); // ошибка Nan
+a = add("hello"); // Nan
 ```
 
 **Решение на TypeScript:**
@@ -47,10 +47,16 @@ var a = add(1); // работает
 a = add("hello"); // Argument of type '"hello"' is not assignable to parameter of type 'number'.
 ```
 
+**Синтаксис**:
+
+```js
+function add (x: number): number {...}
+```
+
 **Перекомпилированный в JS код**:
 
 ```js
-
+function add (x) {...}
 ```
 
 **Как решилась проблема**:
