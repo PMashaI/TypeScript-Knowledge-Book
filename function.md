@@ -44,7 +44,7 @@ function add (x: number): number {
 }
 
 var a = add(1); // работает
-a = add("hello"); // Argument of type '"hello"' is not assignable to parameter of type 'number'.
+a = add("hello"); // Ошибка во время компиляции:  Argument of type '"hello"' is not assignable to parameter of type 'number'.
 ```
 
 **Синтаксис**:
