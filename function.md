@@ -25,44 +25,32 @@
 
 У разработчика возникает потребность записать полный тип функции, ограничивая вероятность ошибки вызова.
 
-**Пример возникновения**:
-
-**Пример кода**:  
-_упрощенная контекстная типизация_
+**Пример проблемы на JavaScript:**
 
 ```js
-function add (x: number, y: number): number {
-    return x + y;
+function add(x) {
+    return x++;
 }
-let myAdd = function (x: number, y: number): number {
-    return x + y;
-};
+
+var a = add(1); // работает
+a = add("hello"); // ошибка Nan
 ```
 
-_полноценный пример_
+**Решение на TypeScript:**
 
 ```js
-let myAdd: (baseValue: number, increment: number) =>
-number = function (x: number, y: number): number {
-   return x + y;
-};
+function add (x: number): number {
+    return x++;
+}
+
+var a = add(1); // работает
+a = add("hello"); // Argument of type '"hello"' is not assignable to parameter of type 'number'.
 ```
 
 **Перекомпилированный в JS код**:
 
 ```js
-function add(x, y) {
-    return x + y;
-}
-var myAdd = function(x, y) {
-    return x + y;
-}
-```
 
-```js
-var myAdd = function (x, y) {
-    return x + y;
-};
 ```
 
 **Как решилась проблема**:

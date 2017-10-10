@@ -29,7 +29,7 @@ console.log(x(10));          // Падает в runtime: toUpperCase is not a fu
 var x: (number) => number;
 
 x = function(s) {
-    return s.toUpperCase(); // Ошибка
+    return s.toUpperCase(); // Выведет ошибку во время компиляции
 }
 
 ...
