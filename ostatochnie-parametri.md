@@ -18,7 +18,8 @@ function buildName(firstName) {
     }
     return firstName + " " + restOfName.join("");
 }
-var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+
+var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie"); // 
 ```
 
 **Решение в TypeScript**:
