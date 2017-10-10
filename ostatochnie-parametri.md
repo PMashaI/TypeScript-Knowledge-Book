@@ -45,3 +45,25 @@ buildName(123, 1, "Jo"); // выведет ошибку во время комп
 **Как решилась проблема**:  
 Передача гибкого количества типизированных параметров в качестве группы.
 
+**Синтаксис**:
+
+```js
+function example(firstArg: number, ...restArgs: string[]){
+    ...
+}
+```
+
+**Перекомпилированный в JavaScript код**:
+
+```js
+function a(firstArg) {
+    var restArgs = [];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        restArgs[_i - 1] = arguments[_i];
+    }
+}
+
+```
+
+
+
