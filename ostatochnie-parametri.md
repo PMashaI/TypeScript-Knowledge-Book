@@ -2,22 +2,13 @@
 
 **Описание**:  
 Неограниченное число необязательных параметров. При передаче аргументов для остаточных параметров их можно передать столько, сколько угодно; а можно и вообще ничего не передавать.**  
-Аналог в c\# / js**: arguments in JS**  
+Аналог в c\# / js**: `arguments`**  
 Решаемая проблема**:  
 Работа с несколькими параметрами, рассматривая их как группу; неизвестно, сколько параметров будет принимать функция.  
 **Пример возникновения:**  
 Неизвестно, сколько параметров будет принимать функция.
 
-**Пример кода:**
-
-```js
-function buildName (firstName: string, ...restOfName: string[]) {
-    return firstName + " "+ restOfName.join("");
-}
-let employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
-```
-
-**Перекомпилированный в JS код**:
+**Пример проблемы в JavaScript**:
 
 ```js
 function buildName(firstName) {
@@ -28,6 +19,15 @@ function buildName(firstName) {
     return firstName + " " + restOfName.join("");
 }
 var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+```
+
+**Решение в TypeScript**:
+
+```js
+function buildName (firstName: string, ...restOfName: string[]) {
+    return firstName + " "+ restOfName.join("");
+}
+let employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
 ```
 
 **Как решилась проблема**:  
