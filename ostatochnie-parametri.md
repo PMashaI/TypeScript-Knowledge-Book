@@ -12,14 +12,17 @@
 
 ```js
 function buildName(firstName) {
-    var restOfName = [];
+    var result;
     for (var _i = 1; _i < arguments.length; _i++) {
-        restOfName[_i - 1] = arguments[_i];
+        result = arguments[_i]++;
     }
-    return firstName + " " + restOfName.join("");
+
+    console.log(result);
+    console.log(firstName.slice(1));
 }
 
-var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie"); // 
+buildName("Jo", 1, 234); // работает
+buildName(123, 1, "Jo"); // Падает в runtime: firstName.slice is not a function
 ```
 
 **Решение в TypeScript**:
