@@ -28,10 +28,18 @@ buildName(123, 1, "Jo"); // Падает в runtime: firstName.slice is not a fu
 **Решение в TypeScript**:
 
 ```js
-function buildName (firstName: string, ...restOfName: string[]) {
-    return firstName + " "+ restOfName.join("");
+function buildName(firstName: string, ...restOfName: number[]) {
+    var result;
+    for (var _i = 1; _i < arguments.length; _i++) {
+        result = arguments[_i]++;
+    }
+
+    console.log(result);
+    console.log(firstName.slice(1));
 }
-let employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
+
+buildName("Jo", 1, 234); // работает
+buildName(123, 1, "Jo"); // выведет ошибку во время компиляции
 ```
 
 **Как решилась проблема**:  
