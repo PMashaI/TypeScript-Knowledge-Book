@@ -16,7 +16,7 @@
 * [Function](function.md)
 * [Остаточные параметры](ostatochnie-parametri.md)
 * [Контекстный тип](kontekstnii-tip.md)
-* [JSX](https://facebook.github.io/jsx/)
+* JSX
 * Generics
 * Symbol
 * Итераторы и генераторы
