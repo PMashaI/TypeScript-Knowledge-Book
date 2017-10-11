@@ -22,7 +22,7 @@
 * Итераторы и генераторы
 * Modules
 * Namespaces
-* Слияние типов
+* Слияние объявлений типов
 * Decorators
 * Mixins
 * [ToDo List](todo-list.md)
