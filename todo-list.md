@@ -1,5 +1,5 @@
 * ~~Внести корректировки с 1:1~~
-* **Деструктурирование, Class, Enum, Interface - доделать** с учетом пункта ниже
+* **Деструктурирование, Enum- доделать** с учетом пункта ниже
 * ~~**Дописать примеры проблем на JavaScript \(применяя новый конспект с типа объединения\)**~~
 
 * ~~**Контекстный тип**:~~
@@ -12,7 +12,7 @@ x = function(s) {
 }
 ```
 
-* **Допилить чего не хватает** \([JSX](https://facebook.github.io/jsx/), ...\)
+* **Допилить чего не хватает** \([JSX](https://facebook.github.io/jsx/), Generics, \) - разбросать Совместимость типов по темам
 * **Control flow / data flow analisys for ANY and other examples**: [https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis](https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis)
 
 * ~~Синхронизировать стили с Гитом~~ \([https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)\)
