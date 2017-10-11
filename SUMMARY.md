@@ -6,7 +6,7 @@
 * [Union](/tip-obedinenie.md)
 * [Never ](never.md)
 * [Type Assertions](type-assertions.md)
-* [Enum](enum.md)
+* [Enum](enum.md)s
 * [Var](var.md)
 * [Let](let.md)
 * [Const](const.md)
