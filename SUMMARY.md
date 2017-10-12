@@ -16,14 +16,14 @@
 * [Function](function.md)
 * [Остаточные параметры](ostatochnie-parametri.md)
 * [Контекстный тип](kontekstnii-tip.md)
-* JSX
-* Generics
-* Symbol
-* Итераторы и генераторы
+* [JSX](jsx.md)
+* [Generics](generics.md)
+* [Symbol](symbol.md)
+* [Итераторы и генераторы](iteratori-i-generatori.md)
 * [Modules](modules.md)
-* Namespaces
-* Слияние объявлений типов
-* Decorators
-* Mixins
+* [Namespaces](namespaces.md)
+* [Слияние объявлений типов](sliyanie-obyavlenii-tipov.md)
+* [Decorators](decorators.md)
+* [Mixins](mixins.md)
 * [ToDo List](todo-list.md)
 
