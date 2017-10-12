@@ -20,12 +20,10 @@
 * Generics
 * Symbol
 * Итераторы и генераторы
-* Modules
+* [Modules](modules.md)
 * Namespaces
 * Слияние объявлений типов
 * Decorators
 * Mixins
 * [ToDo List](todo-list.md)
-
-
 
