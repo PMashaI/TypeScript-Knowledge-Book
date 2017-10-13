@@ -12,7 +12,8 @@ x = function(s) {
 }
 ```
 
-* **Допилить чего не хватает** \([JSX](https://facebook.github.io/jsx/), Generics, Symbol, Итераторы и генераторы, ~~Модули~~, Namespaces, Слияние типов, Декораторы, Миксины\) - разбросать Совместимость типов по темам
+* **Допилить чего не хватает** \([JSX](https://facebook.github.io/jsx/), Generics, Symbol, ~~_**Итераторы и генераторы**_~~, ~~Модули~~, Namespaces, Слияние типов, Декораторы, Миксины\) - разбросать Совместимость типов по темам
+* **Итераторы и генераторы - просмотреть на 1:1**
 * **Control flow / data flow analisys for ANY and other examples**: [https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis](https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis)
 
 * **Структурировать содержание по блокам**
