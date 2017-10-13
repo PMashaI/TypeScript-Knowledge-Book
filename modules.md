@@ -27,6 +27,7 @@
 import {one as item1, two } from "./nums";
 import * as numbers from "./nums";
 
+export {VARIABLE as NAME};
 export let one = 1;
 ```
 
