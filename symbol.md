@@ -15,18 +15,30 @@
 
 Необходимо создать и использовать уникальный идентификатор для свойств объекта, а также создать уникальные константы, которые были бы не видны в итерациях `for...in, Object.keys()` или `JSON.stringify()`.
 
-**Как решить проблему**:
-
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
+const CHINESE = Symbol(); // в качестве константы
 
+let sym = Symbol();
+ 
+let obj = {
+    [sym]: "value"
+};
+ 
+console.log(obj[sym]); // value
 ```
 
 **Перекомпилированный в JSкод:**
 
 ```js
-
+var CHINESE = Symbol(); // в качестве константы
+var sym = Symbol();
+var obj = (_a = {},
+    _a[sym] = "value",
+    _a);
+console.log(obj[sym]); // value
+var _a;
 ```
 
 
