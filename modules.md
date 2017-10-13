@@ -24,14 +24,20 @@
 **Синтаксис**[:](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
-import {one, two} from "./nums";
-export
+import {one as item1, two } from "./nums";
+import * as numbers from "./nums";
+
+export let one = 1;
 ```
 
 **Перекомпилированный в JSкод:**
 
 ```js
-
+define(["require", "exports"], function (require, exports) {
+    "use strict";
+    Object.defineProperty(exports, "__esModule", { value: true });
+    exports.one = 1;
+});
 ```
 
 
