@@ -10,7 +10,7 @@
 
 **Решаемая проблема:**
 
-
+Поддержка `Array, Map, Set, String, Int32Array, Uint32Array` и т.д., типов для использования `for..of` и `for...in`
 
 **Как решить проблему**:
 
@@ -18,7 +18,7 @@
 
 ```js
 let someArray = [1, "string", false];
- 
+
 for (let entry of someArray) {
     console.log(entry); // 1, "string", false
 }
