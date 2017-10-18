@@ -13,7 +13,8 @@ x = function(s) {
 ```
 
 * **Допилить чего не хватает** \([JSX](https://facebook.github.io/jsx/), Generics, ~~Symbol~~, ~~Итераторы и генераторы~~, ~~Модули~~, Namespaces, Слияние типов, Декораторы, Миксины\) - разбросать Совместимость типов по темам
-* **Итераторы и генераторы - просмотреть на 1:1**
+* **Итераторы и генераторы - добавить разницу между for in и for of**
+* **Разделить аналоги на отдельные, т.е c\#: ..., js: Ecmascript 6: ..., EcmaScript5: ...\(+ ссылки на описание аналогов из других документаций**\)
 * **Control flow / data flow analisys for ANY and other examples**: [https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis](https://blog.mariusschulz.com/2016/09/30/typescript-2-0-control-flow-based-type-analysis)
 
 * **Структурировать содержание по блокам**
