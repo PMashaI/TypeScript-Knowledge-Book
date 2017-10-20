@@ -1,44 +1,38 @@
 #### **Название фичи: Namespaces**
 
-**Описание:**
+**Описание**: Пространства имен предоставляют удобный синтаксис вокруг общего паттерна, используемого в JavaScript.
 
-  
-**Аналог в c\# / js**: 
+Пространства имен могут быть вложены. 
 
-**Решаемая проблема:**
-
-
-
-**Пример возникновения:**
-
-
-
-**Пример проблемы на JavaScript:**
-
-```js
-
-```
-
-**Пример решения на TypeScript:**
-
-```js
-
-```
-
-**Как решить проблему**:
-
-
+**Аналог в js**: `module`
 
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
-
+namespace Utility {
+    export function log(msg) {
+        console.log(msg);
+    }
+    export function error(msg) {
+        console.error(msg);
+    }
+}
 ```
 
 **Перекомпилированный в JSкод:**
 
 ```js
-
+var Utility;
+(function (Utility) {
+    function log(msg) {
+        console.log(msg);
+    }
+    Utility.log = log;
+    function error(msg) {
+        console.error(msg);
+    }
+    Utility.error = error;
+})(Utility || (Utility = {}));
 ```
 
 
