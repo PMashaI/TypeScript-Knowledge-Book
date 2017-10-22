@@ -2,6 +2,7 @@
 
 **Описание**:  
 TypeScript, как и многие объектно-ориентированные языки, не позволяет использовать напрямую множественное наследование. Из-за этого, не смотря на то, что можно реализовать множество интерфейсов в классе, унаследовать его можно только от одного класса.  
+Примесь – объект, содержащий методы и свойства для реализации конкретного функционала.  
 Функциональность миксинов \(mixins\) частично позволяет унаследовать свойства и методы сразу двух и более классов, тем самым избавившись от дублирования в коде.
 
 **Аналог в Scala**: `mixins`, `traits`
@@ -63,7 +64,8 @@ class SmartObject implements Disposable, Activatable {
     interact() {
         this.activate();
     }
-
+    
+    // создаем свойства-дублёры
     // Disposable
     isDisposed: boolean = false;
     dispose: () => void;
@@ -74,12 +76,60 @@ class SmartObject implements Disposable, Activatable {
     deactivate: () => void;
 }
 
+//соединяем примеси в классе, создавая полную реализацию
 applyMixins(SmartObject, [Disposable, Activatable]);
+
+//функция для создания примесей. Пробегает по свойствам и копировать их в целевой элемент, 
+//заполняя свойства-дублёры их реализациями.
+function applyMixins(derivedCtor: any, baseCtors: any[]) {
+    baseCtors.forEach(baseCtor => {
+        Object.getOwnPropertyNames(baseCtor.prototype).forEach(name => {
+            derivedCtor.prototype[name] = baseCtor.prototype[name];
+        });
+    });
+}
 ```
 
 **Перекомпилированный в JSкод:**
 
 ```js
+var Disposable = /** @class */ (function () {
+    function Disposable() {
+    }
+    Disposable.prototype.dispose = function () {
+        this.isDisposed = true;
+    };
+    return Disposable;
+}());
+var Activatable = /** @class */ (function () {
+    function Activatable() {
+    }
+    Activatable.prototype.activate = function () {
+        this.isActive = true;
+    };
+    Activatable.prototype.deactivate = function () {
+        this.isActive = false;
+    };
+    return Activatable;
+}());
+var SmartObject = /** @class */ (function () {
+    function SmartObject() {
+        this.isDisposed = false;
+        this.isActive = false;
+    }
+    SmartObject.prototype.interact = function () {
+        this.activate();
+    };
+    return SmartObject;
+}());
+applyMixins(SmartObject, [Disposable, Activatable]);
+function applyMixins(derivedCtor, baseCtors) {
+    baseCtors.forEach(function (baseCtor) {
+        Object.getOwnPropertyNames(baseCtor.prototype).forEach(function (name) {
+            derivedCtor.prototype[name] = baseCtor.prototype[name];
+        });
+    });
+}
 
 ```
 
