@@ -42,9 +42,9 @@ class Disposable {
     dispose() {
         this.isDisposed = true;
     }
- 
+
 }
- 
+
 // активируемый миксин
 class Activatable {
     isActive: boolean;
@@ -55,18 +55,19 @@ class Activatable {
         this.isActive = false;
     }
 }
- 
+
+// новый класс, объединяющий обе примеси. Рассматриваем классы как интерфейсы и используем только типы, а не реализации
 class SmartObject implements Disposable, Activatable {
     constructor() {}
- 
+
     interact() {
         this.activate();
     }
- 
+
     // Disposable
     isDisposed: boolean = false;
     dispose: () => void;
-    
+
     // Activatable
     isActive: boolean = false;
     activate: () => void;
