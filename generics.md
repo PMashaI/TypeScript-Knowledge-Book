@@ -12,8 +12,6 @@
 
 **Пример возникновения**:
 
-
-
 **Пример проблемы на JavaScript + TypeScript без generics:**
 
 ```js
@@ -33,7 +31,12 @@ function identity(arg: any): any {
 **Пример решения на TypeScript:**
 
 ```js
+let output = identity("Hey!"); // у output будет тип string
 
+function identity<t>(arg: T): T {
+    return arg;
+}
+</t>
 ```
 
 **Как решить проблему**:
