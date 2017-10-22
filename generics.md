@@ -8,9 +8,11 @@
 
 **Решаемая проблема**:
 
-Необходимость захватить тип аргумента функции / метода так, чтобы его впоследствии можно было использовать для описания типа возвращаемого значения. 
+Необходимость захватить тип аргумента функции / метода так, чтобы его впоследствии можно было использовать для описания типа возвращаемого значения.
 
-**Пример возникновения:**
+**Пример возникновения**:
+
+
 
 **Пример проблемы на JavaScript + TypeScript без generics:**
 
@@ -24,7 +26,7 @@ function identity(arg){
 
 //TS
 function identity(arg: any): any {
-    return arg;
+    return arg; // может быть любой тип any
 }
 ```
 
@@ -36,18 +38,34 @@ function identity(arg: any): any {
 
 **Как решить проблему**:
 
-Использование типовой переменной и 
+Использование типовой переменной и
 
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
+function identity<t>(arg: T): T {
+    return arg;
+}
+</t>
 
+let output = identity<string>("myString");  // у output будет тип string
+</string>
+
+let output = identity("myString");  // у output будет тип string
 ```
 
 **Перекомпилированный в JSкод:**
 
 ```js
+function identity(arg) {
+    return arg;
+}
+/t>;
 
+var output = identity("myString"); 
+/string>;
+
+var output = identity("myString");
 ```
 
 
