@@ -8,7 +8,7 @@
 
 **Решаемая проблема**:
 
-Определение типа аргумента функции / метода /класса так, чтобы его впоследствии можно было использовать для последующего использования / описания типа возвращаемого значения.
+Определение типа аргумента интерфейса / переменной  /класса так, чтобы его впоследствии можно было использовать для последующего использования / описания типа возвращаемого значения.
 
 **Пример возникновения**:
 
@@ -57,6 +57,17 @@ let output = identity<string>("myString");  // у output будет тип strin
 </string>
 
 let output = identity("myString");  // у output будет тип string
+
+//ограничение обобщения
+interface Lengthwise {
+    length: number;
+}
+//добавили ограничение на свойство length 
+function loggingIdentity<t extends="" lengthwise="">(arg: T): T {
+    console.log(arg.length);  // берем только объекты со свойством .length
+    return arg;
+}
+</t>
 ```
 
 **Перекомпилированный в JSкод:**
@@ -70,7 +81,11 @@ function identity(arg) {
 var output = identity("myString"); 
 /string>;
 
-var output = identity("myString");
+function loggingIdentity(arg) {
+    console.log(arg.length);
+    return arg;
+}
+/t>;
 ```
 
 
