@@ -33,10 +33,47 @@ TypeScript, как и многие объектно-ориентированны
 
 ![](/assets/imp43rt.png)
 
-**Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
+**Синтаксис с примером:**
 
 ```js
+// одноразовый миксин
+class Disposable {
+    isDisposed: boolean;
+    dispose() {
+        this.isDisposed = true;
+    }
+ 
+}
+ 
+// активируемый миксин
+class Activatable {
+    isActive: boolean;
+    activate() {
+        this.isActive = true;
+    }
+    deactivate() {
+        this.isActive = false;
+    }
+}
+ 
+class SmartObject implements Disposable, Activatable {
+    constructor() {}
+ 
+    interact() {
+        this.activate();
+    }
+ 
+    // Disposable
+    isDisposed: boolean = false;
+    dispose: () => void;
+    
+    // Activatable
+    isActive: boolean = false;
+    activate: () => void;
+    deactivate: () => void;
+}
 
+applyMixins(SmartObject, [Disposable, Activatable]);
 ```
 
 **Перекомпилированный в JSкод:**
