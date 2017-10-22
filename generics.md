@@ -12,6 +12,8 @@
 
 **Пример возникновения**:
 
+
+
 **Пример проблемы на JavaScript + TypeScript без generics:**
 
 ```js
