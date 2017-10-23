@@ -21,20 +21,6 @@
 
 **Решаемая проблема:**
 
-**Пример возникновения:**
-
-**Пример проблемы на JavaScript:**
-
-```js
-
-```
-
-**Пример решения на TypeScript:**
-
-```js
-
-```
-
 **Как решить проблему**:
 
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
@@ -45,12 +31,12 @@ function decoratorName(target: Function, key: string, value: any) {
     return {
         value: (...args: any[]) => {
             // Код выполняемый до вызова декорируемого метода          
- 
+
             // Вызов исходного метода
             var result = value.value.apply(this, args);
- 
+
             // Код выполняемый после вызова декорируемого метода
- 
+
             return result;
         }
     };
