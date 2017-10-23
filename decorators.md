@@ -40,6 +40,22 @@
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
+//декоратор
+function decoratorName(target: Function, key: string, value: any) {
+    return {
+        value: (...args: any[]) => {
+            // Код выполняемый до вызова декорируемого метода          
+ 
+            // Вызов исходного метода
+            var result = value.value.apply(this, args);
+ 
+            // Код выполняемый после вызова декорируемого метода
+ 
+            return result;
+        }
+    };
+}
+
 //Фабрика Декораторов - функция, возвращающая выражение, которая будет вызвана декоратором во время 
 //исполнения программы
 
@@ -50,18 +66,15 @@ function color(value: string) { // фабрика
 }
 
 // композиция декораторов
-
 function f() {
-    console.log("f(): вычисляется");
     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
-        console.log("f(): вызван");
+        ...
     }
 }
 
 function g() {
-    console.log("g(): вычисляется");
     return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
-        console.log("g(): вызван");
+        ...
     }
 }
 
@@ -71,7 +84,6 @@ class C {
     method() {}
 }
 
-// результаты вывода на консоль
 // f(): вычисляется
 // g(): вычисляется
 // g(): вызван
