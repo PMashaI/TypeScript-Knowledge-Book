@@ -48,6 +48,34 @@ function color(value: string) { // фабрика
         ...
     }
 }
+
+// композиция декораторов
+
+function f() {
+    console.log("f(): вычисляется");
+    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("f(): вызван");
+    }
+}
+ 
+function g() {
+    console.log("g(): вычисляется");
+    return function (target, propertyKey: string, descriptor: PropertyDescriptor) {
+        console.log("g(): вызван");
+    }
+}
+ 
+class C {
+    @f()
+    @g()
+    method() {}
+}
+
+// результаты вывода на консоль
+// f(): вычисляется
+// g(): вычисляется
+// g(): вызван
+// f(): вызван
 ```
 
 **Перекомпилированный в JSкод:**
