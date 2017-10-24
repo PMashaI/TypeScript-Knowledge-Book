@@ -74,6 +74,14 @@ function loggingIdentity<t extends="" lengthwise="">(arg: T): T {
     return arg;
 }
 </t>
+
+//совместимость типов
+let identity = function<t>(x: T): T {}
+ 
+let reverse = function<U>(y: U): U {}
+ 
+identity = reverse;  // работает, так как (x: any)=>any совпадает с (y:any)=>any
+</t>
 ```
 
 **Перекомпилированный в JSкод:**
@@ -91,6 +99,11 @@ function loggingIdentity(arg) {
     console.log(arg.length);
     return arg;
 }
+/t>;
+
+var identity = function (x) { };
+var reverse = function (y) { };
+identity = reverse;
 /t>;
 ```
 
