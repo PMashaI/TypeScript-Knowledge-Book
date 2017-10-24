@@ -19,14 +19,22 @@
 
 **Аналог в c\#**: `Decorators`
 
-**Решаемая проблема:**
+**Решаемая проблема**:
+
+
 
 **Как решить проблему**:
+
+
 
 **Синтаксис**[**:**](https://citifox.ru/event/adidas-dance-battle/)
 
 ```js
 //декоратор
+
+//target – прототип класса, в котором установлен декоратор;
+//key – имя метода на котором установлен декоратор;
+//value – дескриптор метода, на который установлен декоратор
 function decoratorName(target: Function, key: string, value: any) {
     return {
         value: (...args: any[]) => {
