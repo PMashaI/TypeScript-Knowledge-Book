@@ -34,6 +34,23 @@ class Greeter {
 }
 
 let greeter = new Greeter("world");
+
+//совместимость типов
+class Animal {
+    feet: number;
+    constructor(name: string, numFeet: number) { }
+}
+ 
+class Size {
+    feet: number;
+    constructor(numFeet: number) { }
+}
+ 
+let a: Animal;
+let s: Size;
+ 
+a = s;  // работает
+s = a;  // работает
 ```
 
 **Перекомпилированный в JS код**:
@@ -51,6 +68,21 @@ var Greeter = (function(){
 }());
 
 var greeter = new Greeter("world");
+
+var Animal = /** @class */ (function () {
+    function Animal(name, numFeet) {
+    }
+    return Animal;
+}());
+var Size = /** @class */ (function () {
+    function Size(numFeet) {
+    }
+    return Size;
+}());
+var a;
+var s;
+a = s;
+s = a;
 ```
 
 
